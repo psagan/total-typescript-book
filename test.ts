@@ -4,7 +4,7 @@ let otherThing = {
     name: "Alice"
 };
 
-let element = document.getElementById(12);
+// let element = document.getElementById("12");
 
 const func = () => {
     // Refactor this to be its own function.
@@ -16,3 +16,12 @@ const func = () => {
 function newFunction() {
     return `${(Math.random() * 100).toFixed(2)}%`;
 }
+
+const nameIt= (name: string) => {
+    return `Hello, ${name}!`;
+}
+
+
+let wroom = "Alice";
+
+const dupa = (dupa: {super:})

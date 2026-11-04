@@ -1,4 +1,4 @@
-<a href="https://totaltypescript.com/"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1699022610/book-github-banner_2x_z1ahit.png" alt="Total TypeScript by Matt Pocock" /></a>
+![Total TypeScript by Matt Pocock](https://res.cloudinary.com/total-typescript/image/upload/v1699022610/book-github-banner_2x_z1ahit.png)
 
 ## Quickstart
 
@@ -6,7 +6,7 @@
 
 Because this course is _so big_ we're using `pnpm` as the package manager. It's like `npm`, but results in fewer `node_modules` saved to disk.
 
-[Install `pnpm` globally](https://pnpm.io/installation).
+[Install](https://pnpm.io/installation) `pnpm` [globally](https://pnpm.io/installation).
 
 ### Install Dependencies
 
@@ -30,8 +30,8 @@ To take an exercise:
 This course encourages **active, exploratory learning**. In the video, I'll explain a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
 
 1. Check out [TypeScript's docs](https://www.typescriptlang.org/docs/handbook/intro.html).
-1. Try to find something that looks relevant.
-1. Give it a go to see if it solves the problem.
+2. Try to find something that looks relevant.
+3. Give it a go to see if it solves the problem.
 
 You'll know if you've succeeded because the tests will pass.
 
