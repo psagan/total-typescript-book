@@ -21,7 +21,11 @@ const nameIt= (name: string) => {
     return `Hello, ${name}!`;
 }
 
+import { Customer } from "./types/customer.types";
+let customer: Customer = {
+    name: "John Doe",
+    email: "john.doe@example.com",
+    balance: 100
+}
 
-let wroom = "Alice";
-
-const dupa = (dupa: {super:})
+console.log(customer);
