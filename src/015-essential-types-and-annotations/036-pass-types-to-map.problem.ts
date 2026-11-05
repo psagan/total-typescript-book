@@ -2,6 +2,7 @@
 
 type User = { name: string; age: number };
 
+
 const userMap = new Map<number, User>();
 // const userMap = new Map<number, { name: string; age: number }>();
 
