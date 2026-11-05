@@ -28,4 +28,8 @@ let customer: Customer = {
     balance: 100
 }
 
-console.log(customer);
+const showArgs = (...args:number[]):void => {
+    console.log(args.join('-'))
+}
+
+showArgs(1,2,3,4)
