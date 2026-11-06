@@ -21,11 +21,13 @@ const nameIt= (name: string) => {
     return `Hello, ${name}!`;
 }
 
-import { Customer } from "./types/customer.types";
-let customer: Customer = {
+import { Customer, TinyCustomer, MyCustomer } from "./types/customer.types";
+
+let customer: MyCustomer = {
     name: "John Doe",
     email: "john.doe@example.com",
-    balance: 100
+    balance: 100,
+    isMy: true    
 }
 
 const showArgs = (...args:number[]):void => {
@@ -33,3 +35,11 @@ const showArgs = (...args:number[]):void => {
 }
 
 showArgs(1,2,3,4)
+
+type Environment = "development" | "production" | "staging";
+// Record w TS jest zdefiniowany jak mapowanie po każdym kluczu z unii:
+// Czyli typ mówi: „obiekt ma mieć właściwość dla każdego możliwego Environment jako klucza”
+type Config = Record<Environment, { apiBaseUrl: string; timeout: number }>;
+// @ts-expect-error błąd braku innych kluczy
+const x:Config = {"development": {apiBaseUrl: 'https:/', timeout: 10.1}}
+console.log(x)
