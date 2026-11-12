@@ -3,7 +3,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   test: {
-    include: ["src/**/*{problem,solution,explainer}*.{ts,tsx}"],
+    include: ["src/**/*{problem,solution,explainer}*.{ts,tsx}", "my/**/*.{ts,tsx}",],
     passWithNoTests: true,
     environment: "jsdom",
   },

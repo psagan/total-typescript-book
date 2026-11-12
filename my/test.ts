@@ -33,6 +33,8 @@ let customer: MyCustomer = {
 const showArgs = (...args:number[]):void => {
     console.log(args.join('-'))
 }
+// @ts-expect-error
+let customer2: MyCustomer = { x: "abc"}
 
 showArgs(1,2,3,4)
 
